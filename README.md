@@ -1,4 +1,4 @@
 # Landing-Page-Classifier
 
 Link to the LP classifier webpage:
-https://giacomovernizzi-streamlit-example-streamlit-app-yt3aij.streamlitapp.com/
+https://giacomovernizzi-landing-page-classifier-app-yl5j9e.streamlitapp.com/
