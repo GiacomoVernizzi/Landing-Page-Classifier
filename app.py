@@ -39,11 +39,11 @@ if uploaded_file is not None:
         if prediction < 0.25:
             print(st.subheader("This landing page is very likely to convert (>75% score)"))
         elif 0.26 > prediction < 0.5:
-            print(st.subheader("This landing page is likely to convert (>50% score)"))
+            print(st.subheader("This landing page is likely to convert (50-74% score)"))
         elif 0.5 > prediction < 0.75:
-            print(st.subheader("This landing page is unlikely to convert (>25% score)"))
+            print(st.subheader("This landing page is unlikely to convert (25-49% score)"))
         elif prediction > 0.75:
-            print(st.subheader("This landing page is very unlikely to convert (0% score)"))
+            print(st.subheader("This landing page is very unlikely to convert (0-24% score)"))
             
 
    
