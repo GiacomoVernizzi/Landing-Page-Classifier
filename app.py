@@ -1,3 +1,4 @@
+import pandas as pd
 import cv2
 import numpy as np
 import streamlit as st
@@ -32,9 +33,10 @@ if uploaded_file is not None:
     Genrate_pred = st.button("Generate Prediction")    
     if Genrate_pred:
         prediction = model.predict(img_reshape)
-        def prediction(prediction):
-            if prediction < 0.5:
+        def function(x):
+            if x < 0.5:
                 return "This landing page is unlikely to convert"
             else:
                 return "This landing page is likely to convert"
+            prediction.apply(function)
         st.subheader(prediction)
