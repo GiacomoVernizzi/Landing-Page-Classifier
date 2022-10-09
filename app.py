@@ -30,11 +30,17 @@ if uploaded_file is not None:
     resized = mobilenet_v2_preprocess_input(resized)
     img_reshape = resized[np.newaxis,...]
 
+
     Genrate_pred = st.button("Generate Prediction")    
     
+    
+    if Genrate_pred:
     prediction = model.predict(img_reshape)
     
-    def function(x):
+   
+
+
+def function(x):
         if x < 0.5:
             return "This landing page is unlikely to convert"
         else:
