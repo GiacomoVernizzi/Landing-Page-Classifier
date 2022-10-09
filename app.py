@@ -42,9 +42,9 @@ if uploaded_file is not None:
         
         
 if prediction < 0.5:
-    print(f 'This landing page is unlikely to convert)
-          else:
-          print(f 'This landing page is unlikely to convert)
+    print(f 'This landing page is unlikely to convert')
+    else:
+        print(f 'This landing page is unlikely to convert')
         
        
         
