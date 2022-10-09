@@ -45,8 +45,10 @@ def function(x):
             return "This landing page is unlikely to convert"
         else:
             return "This landing page is likely to convert" 
-            
-     
-   prediction.apply(function)
-   
-   st.subheader(prediction)
+        
+        
+        
+        
+prediction.apply(function)       
+        
+st.subheader(prediction)
