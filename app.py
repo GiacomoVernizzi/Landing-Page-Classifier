@@ -34,11 +34,11 @@ if uploaded_file is not None:
     
     prediction = model.predict(img_reshape)
     
-        def function(x):
-            if x < 0.5:
-                return "This landing page is unlikely to convert"
-            else:
-                return "This landing page is likely to convert" 
+    def function(x):
+        if x < 0.5:
+            return "This landing page is unlikely to convert"
+        else:
+            return "This landing page is likely to convert" 
             
      
    prediction.apply(function)
