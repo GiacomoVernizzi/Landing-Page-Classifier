@@ -36,10 +36,13 @@ if uploaded_file is not None:
     
     if Genrate_pred:
         prediction = model.predict(img_reshape)
-        if prediction < 0.5:
-            st.subheader("This landing page is likely to convert")
-            else:
-                st.subheader("This landing page is likely to convert")
+        result = st.subheader("This landing page is likely to convert")
+        
+        
+if prediction < 0.5:
+    print(result)
+    else:
+        st.subheader("This landing page is likely to convert")
           
  
          
