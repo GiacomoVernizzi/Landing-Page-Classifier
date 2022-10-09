@@ -31,12 +31,16 @@ if uploaded_file is not None:
     img_reshape = resized[np.newaxis,...]
 
     Genrate_pred = st.button("Generate Prediction")    
-    if Genrate_pred:
-        prediction = model.predict(img_reshape)
+    
+    prediction = model.predict(img_reshape)
+    
         def function(x):
             if x < 0.5:
                 return "This landing page is unlikely to convert"
             else:
-                return "This landing page is likely to convert"
-            prediction.apply(function)
-        st.subheader(prediction)
+                return "This landing page is likely to convert" 
+            
+     
+   prediction.apply(function)
+   
+   st.subheader(prediction)
