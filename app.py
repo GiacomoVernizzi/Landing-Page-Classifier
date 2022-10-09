@@ -8,8 +8,7 @@ from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_in
 st.title('Landing Page Classfier')
 
 st.subheader('This is a CNN classifier trained on 100 good and 100 bad Ad landing pages. Just screeshot your landing page and drop it into the box below n\
-           to generate an instant prediction!', 
-           unsafe_allow_html=False)
+           to generate an instant prediction!')
 
 model = tf.keras.models.load_model('LP_classifier.h5')
 ### load file
