@@ -10,7 +10,7 @@ st.title('Landing Page Classfier')
 
 st.subheader('Unsure whether your landing page will convert or not? Check this out!')
 
-st.caption('This is a CNN classifier trained on 100 good and 100 bad Ad landing pages. \
+st.caption('This is a CNN classifier trained on 100 good and 100 bad Ad landing pages marketing proved. \
 Just screeshot your landing page and drop it into the box below to generate an instant prediction!', unsafe_allow_html=False)
 
 model = tf.keras.models.load_model('LP_classifier.h5')
