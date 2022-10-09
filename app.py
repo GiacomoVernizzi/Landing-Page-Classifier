@@ -42,6 +42,8 @@ if uploaded_file is not None:
             print(result_1)
         elif prediction > 0.5:
             print(result_2)
+        else:
+            print("")
     
           
  
