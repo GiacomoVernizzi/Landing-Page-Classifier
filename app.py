@@ -8,7 +8,7 @@ from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_in
 
 st.title('Landing Page Classfier')
 
-st.subheader('Unsure whether your landing page will convert or not? Try this out!')
+st.subheader('Unsure whether your landing page will convert or not? Check this out!')
 
 st.caption('This is a CNN classifier trained on 100 good and 100 bad Ad landing pages. \
 Just screeshot your landing page and drop it into the box below to generate an instant prediction!', unsafe_allow_html=False)
@@ -36,49 +36,14 @@ if uploaded_file is not None:
     
     if Genrate_pred:
         prediction = model.predict(img_reshape)
-        if prediction < 0.5:
+        if prediction < 0.25:
+            print(st.subheader("This landing page is very likely to convert"))
+        elif 0.26 > prediction < 0.5:
             print(st.subheader("This landing page is likely to convert"))
-        elif prediction > 0.5:
+        elif 0.5 > prediction < 0.75:
             print(st.subheader("This landing page is unlikely to convert"))
+        elif prediction > 0.75:
+            print(st.subheader("This landing page is very unlikely to convert"))
             
 
-        
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-     
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-          
- 
-         
+   
