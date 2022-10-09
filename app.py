@@ -37,13 +37,13 @@ if uploaded_file is not None:
     if Genrate_pred:
         prediction = model.predict(img_reshape)
         if prediction < 0.25:
-            print(st.subheader("This landing page is very likely to convert"))
+            print(st.subheader("This landing page is very likely to convert (>75% score)"))
         elif 0.26 > prediction < 0.5:
-            print(st.subheader("This landing page is likely to convert"))
+            print(st.subheader("This landing page is likely to convert (>50% score)"))
         elif 0.5 > prediction < 0.75:
-            print(st.subheader("This landing page is unlikely to convert"))
+            print(st.subheader("This landing page is unlikely to convert (>25% score)"))
         elif prediction > 0.75:
-            print(st.subheader("This landing page is very unlikely to convert"))
+            print(st.subheader("This landing page is very unlikely to convert (0% score)"))
             
 
    
