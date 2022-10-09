@@ -40,7 +40,7 @@ if uploaded_file is not None:
         result_2 = st.subheader("This landing page is unlikely to convert")
         if prediction < 0.5:
             print(result_1)
-        else:
+        elif prediction > 0.5:
             print(result_2)
     
           
