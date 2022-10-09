@@ -5,7 +5,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_input as mobilenet_v2_preprocess_input
 
-st.title(Landing Page Classfier)
+st.title('Landing Page Classfier')
 
 st.caption('This is a CNN classifier trained on 100 good and 100 bad Ad landing pages. Just screeshot your landing page and drop it into the box below', 
            unsafe_allow_html=False)
