@@ -35,7 +35,7 @@ if uploaded_file is not None:
     
     
     if Genrate_pred:
-    prediction = model.predict(img_reshape)
+        prediction = model.predict(img_reshape)
     
    
 
