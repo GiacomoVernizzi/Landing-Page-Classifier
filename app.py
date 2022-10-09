@@ -41,9 +41,10 @@ if uploaded_file is not None:
         
         
 if prediction < 0.5:
-    print(result)
-    else:
-        print( result_2)
+    print(result_1)
+else:
+    print(result_2)
+    
           
  
          
