@@ -40,15 +40,20 @@ if uploaded_file is not None:
    
 
 
-def function(x):
-        if x < 0.5:
-            return "This landing page is unlikely to convert"
-        else:
-            return "This landing page is likely to convert" 
+# def function(x):
+        #if x < 0.5:
+            #return "This landing page is unlikely to convert"
+       # else:
+            #return "This landing page is likely to convert" 
+
         
+
         
+if prediction < 0.5:
+    "This landing page is unlikely to convert"
+    else:
+        "This landing page is unlikely to convert"
         
-        
-prediction.apply(function)       
+       
         
 st.subheader(prediction)
